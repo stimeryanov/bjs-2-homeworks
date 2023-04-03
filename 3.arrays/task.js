@@ -9,7 +9,7 @@ function getUsersNamesInAgeRange(users, gender) {
     users = users.filter(user => user.gender === gender);
     users = users.map(user => user.age);
     return users.reduce((acc, userAge, index, array) => acc + userAge / array.length, 0);
-    /*return users.filter(user => user.gender === gender).map(user => user.age).reduce((acc, userAge, index, array) => acc + userAge / array.length, 0);*/ */
+    /*return users.filter(user => user.gender === gender).map(user => user.age).reduce((acc, userAge, index, array) => acc + userAge / array.length, 0);*/
 }
 const people = [
     { firstName: "Александр", secondName: "Карпов", age: 17, gender: "мужской" },
